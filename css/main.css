@@ -144,7 +144,7 @@ nav{
 }
 
 .video{
-	background: url(../img/head.png) no-repeat center;
+
 	width: 600px;
 	height: 300px;
 	
@@ -429,7 +429,7 @@ nav{
 	background: url("../img/back.jpg") no-repeat center top;
 }
 
-.main{
+.main.mins{
 	padding: 130px 0 ;
 	display: flex;
 	justify-content: space-between;
