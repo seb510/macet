@@ -185,6 +185,7 @@ nav{
 }
 
 .title_p{
+	margin: 15px 0 0 0;
 	font-size: 15px;
 	color: #b0bec5;
 	font-family: 'Raleway', sans-serif;
@@ -454,4 +455,21 @@ nav{
 
 .slider{
 
+}
+
+/*------------OurTeam---------------*/
+
+/*------------Contact us---------------*/
+.back3{
+	background-color: #fafafa;
+}
+.title_p.black{
+	color: #061e37;
+}
+
+/*------------Footer---------------*/
+
+.back4 {
+	background-color: #061e37;
+	height: 400px;
 }
