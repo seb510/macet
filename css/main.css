@@ -472,3 +472,20 @@ nav{
 .back4 {
 	background-color: #061e37;
 }
+
+.row2{
+	display: flex;
+	justify-content: space-between;
+}
+
+.privat{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.privat{
+	color: #838f9b;
+	text-transform: capitalize;
+	font-size: 20px;
+}
