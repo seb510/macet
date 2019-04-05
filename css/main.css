@@ -67,6 +67,7 @@ nav{
 	text-decoration: none;
 	color: snow;
 	font-family: 'Raleway', sans-serif;
+    transition:  0.5s ease;
 }
 
 .menu__item a:hover{
@@ -83,6 +84,7 @@ nav{
     padding: .3em 1em;
     color: snow;
     font-family: 'Raleway', sans-serif;
+    transition:  0.5s ease;
 
 }
 
@@ -136,6 +138,8 @@ nav{
   	font-family: 'Raleway', sans-serif;
 	font-weight: 700; 
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition:  0.5s ease;
+
 }
 
 .button:hover{
@@ -234,6 +238,7 @@ nav{
 	width: 150px;
 	padding: 20px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition:  0.5s ease;
 	
 }
 
@@ -464,7 +469,6 @@ nav{
 	background-color: #fafafa;
 }
 .title_p.black{
-	color: #061e37;
 }
 
 /*------------Footer---------------*/
@@ -476,16 +480,35 @@ nav{
 .row2{
 	display: flex;
 	justify-content: space-between;
+    padding: 50px 0 70px;
 }
 
 .privat{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #838f9b;
 }
 
-.privat{
-	color: #838f9b;
-	text-transform: capitalize;
-	font-size: 20px;
+.soc{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.fab,
+.fas{
+    color: #384b5f;
+    margin-left:20px;
+    transition:  0.5s ease;
+}
+
+.fab.fa-behance{
+    margin-left: 0;
+}
+
+.fab:hover{
+    color: white;
 }
