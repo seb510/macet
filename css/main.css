@@ -469,6 +469,64 @@ nav{
 	background-color: #fafafa;
 }
 .title_p.black{
+	color: #061e37;
+}
+.form{
+	margin: 53px;
+}
+
+.row__contact{
+	text-align: center;
+}
+
+input, textarea::-webkit-input-placeholder {
+	color: #4d4d4d;
+	text-transform: capitalize;
+	font-size: 15px;
+	font-weight: 500;
+}
+.name{
+	border-radius: 5px;
+	width: 310px;
+	padding: 20px 20px;
+	background: #fafafa;
+	font-size: 14px;
+	margin:20px 18px 0;
+	border: solid 1px #061e37;
+	outline: none;
+}
+
+
+.massage{
+	border-radius: 5px;
+	background: #fafafa;
+	font-size: 16px;
+	width: 64%;
+	height: 155px;
+	border: solid 1px #061e37;
+	outline: 0;
+	padding: 15px 0 0 15px;
+	margin-top: 30px;
+}
+.button__send{
+
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #1de9b6;
+	border-radius: 5px;
+	border-style: none;
+	font-size: 15px;
+	color: snow;
+	width: 150px;
+	padding: 15px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	transition: 0.5s ease;
+}
+.button__send:hover{
+	background: black;
+	color: white;
 }
 
 /*------------Footer---------------*/
@@ -511,4 +569,11 @@ nav{
 
 .fab:hover{
     color: white;
+}
+
+
+@media screen and (max-width: 992px) {
+	.container {
+		width: 90%;
+	}
 }
