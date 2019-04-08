@@ -472,11 +472,23 @@ nav{
 	color: #061e37;
 }
 .form{
-	margin: 53px;
+
 }
 
 .row__contact{
 	text-align: center;
+}
+
+.first{
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+.second{
+	display: flex;
+	justify-content: space-around;
+	padding: 40px 0;
 }
 
 input, textarea::-webkit-input-placeholder {
@@ -485,31 +497,47 @@ input, textarea::-webkit-input-placeholder {
 	font-size: 15px;
 	font-weight: 500;
 }
+
+.dw_check{
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	color: #162d44;
+	font-weight: 600;
+}
+.check{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: #fafafa;
+	margin-left: 155px;
+	text-align: center;
+	color: #061e37;
+	border-style: none;
+}
 .name{
 	border-radius: 5px;
-	width: 310px;
-	padding: 20px 20px;
+	width: 265px;
+	padding: 17px;
 	background: #fafafa;
-	font-size: 14px;
-	margin:20px 18px 0;
+	font-size: 12px;
 	border: solid 1px #061e37;
 	outline: none;
+	margin: 15px;
 }
-
 
 .massage{
 	border-radius: 5px;
 	background: #fafafa;
 	font-size: 16px;
-	width: 64%;
+	width: 615px;
 	height: 155px;
 	border: solid 1px #061e37;
 	outline: 0;
 	padding: 15px 0 0 15px;
-	margin-top: 30px;
+	margin-top: 15px;
 }
 .button__send{
-
 	display: inline-block;
 	text-align: center;
 	text-decoration: none;
@@ -521,6 +549,7 @@ input, textarea::-webkit-input-placeholder {
 	color: snow;
 	width: 150px;
 	padding: 15px;
+	margin-right: 155px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	transition: 0.5s ease;
 }

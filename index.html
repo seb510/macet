@@ -278,17 +278,37 @@
                     </p>
                 </div>
                 <div class="row__contact">
-                        <form class="contact_form" action="" method="post" name="contact_form">
-                            <div class="form">
-                                <input type="text" name="username" class="name" placeholder="first name" required>
-                                <input type="text" name="username" class="name" placeholder="last name" required>
-                                <input type="email" name="email-address" class="name" placeholder="email" required>
-                                <input type="tel" name="phone" class="name" placeholder="phone">
-                                <textarea name="comment" placeholder="massage" class="massage"></textarea>
-                                <input type="checkbox" class="check">subscribe to the news
-                                <button type="submit" class="button__send">send</button>
+                    <form class="contact_form" action="" method="post" name="contact_form">
+                        <div class="form">
+                            <div class="first">
+                                <div class="dw_input">
+                                    <input type="text" name="username" class="name" placeholder="first name" required>
+                                </div>
+                                <div class="dw_input">
+                                    <input type="text" name="username" class="name" placeholder="last name" required>
+                                </div>
                             </div>
-                        </form>
+                            <div class="first">
+                                <div class="dw_input">
+                                    <input type="email" name="email-address" class="name" placeholder="email" required>
+                                </div>
+                                <div class="dw_input">
+                                    <input type="tel" name="phone" class="name" placeholder="phone">
+                                </div>
+                            </div>
+                            <div class="dw_text">
+                                <textarea name="comment" placeholder="massage" class="massage"></textarea>
+                            </div>
+                            <div class="second">
+                                <div class="dw_check">
+                                    <input type="checkbox" class="check"><p>subscribe to the news</p>
+                                </div>
+                                <div class="submit">
+                                    <button type="submit" class="button__send">send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
