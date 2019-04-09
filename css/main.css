@@ -588,6 +588,17 @@ input, textarea::-webkit-input-placeholder {
     color: #838f9b;
 }
 
+.privat p{
+	padding-right: 30px;
+}
+
+.dots{
+	width: 7px;
+	height: 7px;
+	border-radius: 10px;
+	background: white;
+	margin-right: 30px;
+}
 .soc{
     display: flex;
     justify-content: end;
