@@ -464,6 +464,38 @@ nav{
 
 /*------------OurTeam---------------*/
 
+
+/*------------Carusel---------------*/
+
+#carousel {
+    height:300px;
+    position:relative;
+    clear:both;
+    overflow:hidden;
+}
+#carousel img {
+    visibility:hidden; /* hide images until carousel can handle them */
+    cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+}
+
+.split-left {
+    width:450px;
+    float:left;
+}
+.split-right {
+    width:400px;
+    float:left;
+    margin-left:10px;
+}
+#callback-output {
+    height:250px;
+    overflow:scroll;
+}
+textarea#newoptions {
+    width:430px;
+}
+/*------------Carusel---------------*/
+
 .soc.team{
     padding: 30px;
     display: flex;
@@ -584,20 +616,20 @@ input, textarea::-webkit-input-placeholder {
 	justify-content: center;
 	align-items: center;
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 15px;
     color: #838f9b;
 }
 
 .privat p{
-	padding-right: 30px;
+	padding-right: 25px;
 }
 
 .dots{
-	width: 7px;
-	height: 7px;
+	width: 6px;
+	height: 6px;
 	border-radius: 10px;
 	background: white;
-	margin-right: 30px;
+	margin-right: 25px;
 }
 .soc{
     display: flex;
