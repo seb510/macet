@@ -166,6 +166,7 @@ nav{
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
+	align-items: center;
 	padding-top: 90px;
 }
 
@@ -197,24 +198,18 @@ nav{
 
 }
 
-.first{
+.fir{
 	color: #172d44;
 	font-size: 18px;
 	text-transform: capitalize;
-	padding: 35px 0px 20px;
-
-}
-
-.first.child{
-	padding-top: 25px;
+	padding: 10px;
+	margin: 0;
 }
 
 
 .first_text{
 	font-size: 15px;
 	color: #8a9fa9;
-	padding: 0px;
-	
 }
 
 .get{
@@ -258,7 +253,6 @@ nav{
 	width: 390px;
 	background: #80d8ff;
 	text-align: center;
-
 }
 
 .table.sky{
@@ -442,7 +436,6 @@ nav{
 }
 
 .inform{
-
 	text-transform: none;
 }
 
@@ -468,7 +461,7 @@ nav{
 /*------------Carusel---------------*/
 
 #carousel {
-    height:300px;
+    height: 196px;
     position:relative;
     clear:both;
     overflow:hidden;
@@ -503,8 +496,9 @@ textarea#newoptions {
     align-items: center;
 }
 
-
-
+.text_title.team{
+	padding: 10px;
+}
 /*------------Contact us---------------*/
 .back3{
 	background-color: #fafafa;
