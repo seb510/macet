@@ -148,10 +148,8 @@ nav{
 }
 
 .video{
-
 	width: 600px;
 	height: 300px;
-	
 }
 
 .text_title{
@@ -179,8 +177,8 @@ nav{
 	text-transform: capitalize;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 600;
-
 }
+
 .title_h3{
 	color: #b0bec5;
 	font-size: 17px;
@@ -195,7 +193,6 @@ nav{
 	color: #b0bec5;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
-
 }
 
 .fir{
@@ -234,7 +231,6 @@ nav{
 	padding: 20px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
     transition:  0.5s ease;
-	
 }
 
 .button_get:hover{
@@ -245,7 +241,6 @@ nav{
 .color{
 	display: flex;
 	justify-content: space-between;
-
 }
 
 .table{
@@ -265,7 +260,6 @@ nav{
 
 .table.pink{
 	background: #ea80fc;
-
 }
 
 .table_icon{
@@ -277,7 +271,6 @@ nav{
 	border-radius: 50%;
 	border-color: snow;
 	background: white;
-
 }
 
 .table_text {
@@ -294,6 +287,7 @@ nav{
 
 
          /*-------Сервис Service--------*/
+
 .title_p.serves{
 	padding-top: 15px;
 }
@@ -314,6 +308,7 @@ nav{
 /*------------Accordion---------------*/
 
 /*Укажем ширину основного блока и размести его по центру страницы*/
+
 .ac-container{
 	width: 800px;
 	margin: 30px auto 30px auto;
@@ -344,7 +339,6 @@ nav{
 .fas{
 	font-size: 14px;
 	padding-right: 20px;
-
 }
 
 .ac-container label:hover{
@@ -458,7 +452,7 @@ nav{
 /*------------OurTeam---------------*/
 
 
-/*------------Carusel---------------*/
+/*------------Corusel---------------*/
 
 #carousel {
     height: 196px;
@@ -505,9 +499,6 @@ textarea#newoptions {
 }
 .title_p.black{
 	color: #061e37;
-}
-.form{
-
 }
 
 .row__contact{
@@ -572,6 +563,7 @@ input, textarea::-webkit-input-placeholder {
 	padding: 15px 0 0 15px;
 	margin-top: 15px;
 }
+
 .button__send{
 	display: inline-block;
 	text-align: center;
@@ -588,6 +580,7 @@ input, textarea::-webkit-input-placeholder {
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	transition: 0.5s ease;
 }
+
 .button__send:hover{
 	background: black;
 	color: white;
@@ -605,7 +598,7 @@ input, textarea::-webkit-input-placeholder {
     padding: 50px 0 70px;
 }
 
-.privat{
+.private{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -614,7 +607,7 @@ input, textarea::-webkit-input-placeholder {
     color: #838f9b;
 }
 
-.privat p{
+.private p{
 	padding-right: 25px;
 }
 
@@ -625,6 +618,7 @@ input, textarea::-webkit-input-placeholder {
 	background: white;
 	margin-right: 25px;
 }
+
 .soc{
     display: flex;
     justify-content: end;
