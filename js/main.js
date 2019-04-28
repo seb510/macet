@@ -25,4 +25,13 @@ $(document).ready(function () {
         return false;
     });
 
+    $(function(){
+        $('.slick-vertical').slick({
+            vertical: true,
+            verticalSwiping: true,
+            slidesToShow: 2,
+            autoplay: true,
+        });
+    });
+
 });

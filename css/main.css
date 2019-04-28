@@ -446,9 +446,30 @@ nav{
 }
 
 .slider{
+	width: 670px;
+}
+
+.slider__block{
+	display: flex;
 
 }
 
+.slider__info{
+	background: white;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.slider__main{
+	color: black;
+	font-size: 20px;
+}
+
+.slider__text{
+	color: #4d4d4d;
+	font-size: 15px;
+	font-weight: 400;
+}
 /*------------OurTeam---------------*/
 
 
@@ -481,6 +502,8 @@ nav{
 textarea#newoptions {
     width:430px;
 }
+
+
 /*------------Carusel---------------*/
 
 .soc.team{
