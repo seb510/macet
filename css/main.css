@@ -424,7 +424,7 @@ nav{
 }
 
 .main.mins{
-	padding: 130px 0 ;
+	padding: 70px 0 ;
 	display: flex;
 	justify-content: space-between;
 }
@@ -449,8 +449,11 @@ nav{
 	width: 670px;
 }
 
+.img{
+	width: 50px;
+}
 .slider__block{
-	display: flex;
+
 
 }
 
@@ -458,17 +461,58 @@ nav{
 	background: white;
 	padding: 20px;
 	border-radius: 5px;
+	width: 550px;
 }
 
 .slider__main{
 	color: black;
 	font-size: 20px;
+	padding: 0 10px;
 }
 
 .slider__text{
-	color: #4d4d4d;
+	color: #b7c4ca;
 	font-size: 15px;
 	font-weight: 400;
+	padding: 15px;
+	text-transform: none;
+	font-style: italic;
+}
+
+/*.slick-prev,*/
+/*.slick-next {*/
+	/*!*-webkit-transform: translate(-50%, 0) rotate(90deg);*!*/
+	/*!*-ms-transform: translate(-50%, 0) rotate(90deg);*!*/
+	/*transform: translate(-50%, 0) rotate(70deg);*/
+	/*left: 50%;*/
+/*}*/
+
+.slick-prev {
+	top: -30px;
+}
+
+.slick-next {
+	top: auto;
+	bottom: -20px;
+}
+
+.slick-prev, .slick-next {
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	transform: translate(-50%, 0) rotate(90deg);
+	/* top: 50%; */
+	display: block;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	cursor: pointer;
+	color: transparent;
+	border: none;
+	outline: none;
+	background: transparent;
 }
 /*------------OurTeam---------------*/
 
@@ -516,7 +560,9 @@ textarea#newoptions {
 .text_title.team{
 	padding: 10px;
 }
+
 /*------------Contact us---------------*/
+
 .back3{
 	background-color: #fafafa;
 }

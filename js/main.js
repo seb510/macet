@@ -31,6 +31,8 @@ $(document).ready(function () {
             verticalSwiping: true,
             slidesToShow: 2,
             autoplay: true,
+            // focusOnSelect: 1,
+            // centerMode: false,
         });
     });
 
