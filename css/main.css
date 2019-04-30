@@ -449,13 +449,17 @@ nav{
 	width: 670px;
 }
 
+
+.slider__block{
+	display: flex;
+
+
+}
+
 .img{
 	width: 50px;
 }
-.slider__block{
 
-
-}
 
 .slider__info{
 	background: white;
@@ -487,6 +491,17 @@ nav{
 	/*left: 50%;*/
 /*}*/
 
+.slick-vertical .slick-arrow {
+	width: 30px;
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.slick-vertical .slick-arrow:hover {
+	opacity: .6;
+}
+
 .slick-prev {
 	top: -30px;
 }
@@ -501,7 +516,7 @@ nav{
 	line-height: 0;
 	position: absolute;
 	transform: translate(-50%, 0) rotate(90deg);
-	/* top: 50%; */
+	 top: 50%;
 	display: block;
 	width: 20px;
 	height: 20px;
@@ -514,6 +529,7 @@ nav{
 	outline: none;
 	background: transparent;
 }
+
 /*------------OurTeam---------------*/
 
 
