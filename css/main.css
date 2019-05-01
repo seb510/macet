@@ -446,17 +446,18 @@ nav{
 }
 
 .slider{
+	display: flex;
 	width: 670px;
 }
 
 
 .slider__block{
 	display: flex;
-
-
+	justify-content: space-between;
 }
 
 .img{
+	display: inline-block;
 	width: 50px;
 }
 
@@ -483,52 +484,6 @@ nav{
 	font-style: italic;
 }
 
-/*.slick-prev,*/
-/*.slick-next {*/
-	/*!*-webkit-transform: translate(-50%, 0) rotate(90deg);*!*/
-	/*!*-ms-transform: translate(-50%, 0) rotate(90deg);*!*/
-	/*transform: translate(-50%, 0) rotate(70deg);*/
-	/*left: 50%;*/
-/*}*/
-
-.slick-vertical .slick-arrow {
-	width: 30px;
-	display: block;
-	margin: 0 auto;
-	cursor: pointer;
-}
-
-.slick-vertical .slick-arrow:hover {
-	opacity: .6;
-}
-
-.slick-prev {
-	top: -30px;
-}
-
-.slick-next {
-	top: auto;
-	bottom: -20px;
-}
-
-.slick-prev, .slick-next {
-	font-size: 0;
-	line-height: 0;
-	position: absolute;
-	transform: translate(-50%, 0) rotate(90deg);
-	 top: 50%;
-	display: block;
-	width: 20px;
-	height: 20px;
-	padding: 0;
-	/*-webkit-transform: translate(0, -50%);*/
-	/*-ms-transform: translate(0, -50%);*/
-	cursor: pointer;
-	color: transparent;
-	border: none;
-	outline: none;
-	background: transparent;
-}
 
 /*------------OurTeam---------------*/
 

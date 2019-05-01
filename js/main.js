@@ -31,10 +31,8 @@ $(document).ready(function () {
             verticalSwiping: true,
             slidesToShow: 2,
             autoplay: true,
-            prevArrow: '<img src="/img/up.svg">',
-            nextArrow: '<img src="/img/downs.svg">'
-            // focusOnSelect: 1,
-            // centerMode: false,
+            // prevArrow: '<img src="/img/ups.svg">',
+            // nextArrow: '<img src="/img/downs.svg">'
         });
     });
 
