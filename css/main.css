@@ -445,33 +445,38 @@ nav{
 	font-weight: 500;
 }
 
+.slick-vertical{
+    display: flex;
+    justify-content: space-between;
+}
+
 .slider{
-	display: flex;
-	width: 670px;
+	width: 630px;
 }
 
 
 .slider__block{
-	display: flex;
+    display: flex;
 	justify-content: space-between;
 }
 
 .img{
-	display: inline-block;
-	width: 50px;
+    display: block;
+    width: 60px;
+    /*font-size: 20px;*/
 }
-
 
 .slider__info{
 	background: white;
-	padding: 20px;
+	padding: 10px;
 	border-radius: 5px;
-	width: 550px;
+	width: 510px;
+    margin: 0;
 }
 
 .slider__main{
 	color: black;
-	font-size: 20px;
+	font-size: 17px;
 	padding: 0 10px;
 }
 
@@ -479,7 +484,7 @@ nav{
 	color: #b7c4ca;
 	font-size: 15px;
 	font-weight: 400;
-	padding: 15px;
+	padding: 10px;
 	text-transform: none;
 	font-style: italic;
 }
