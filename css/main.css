@@ -495,7 +495,7 @@ nav{
 /*------------Corusel---------------*/
 
 #carousel {
-    height: 196px;
+    height: 202px;
     position:relative;
     clear:both;
     overflow:hidden;
@@ -503,6 +503,9 @@ nav{
 #carousel img {
     visibility:hidden; /* hide images until carousel can handle them */
     cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+	border: 10px solid white;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .split-left {
@@ -555,6 +558,7 @@ textarea#newoptions {
 	margin: 0;
 	padding: 0;
 }
+
 .second{
 	display: flex;
 	justify-content: space-around;
