@@ -1,39 +1,32 @@
-$(document).ready(function () {
-    var carousel = $("#carousel").waterwheelCarousel({
-        flankingItems: 3,
-        movingToCenter: function ($item) {
-            $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
-        },
-        movedToCenter: function ($item) {
-            $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
-        },
-        movingFromCenter: function ($item) {
-            $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
-        },
-        movedFromCenter: function ($item) {
-            $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
-        },
-        clickedCenter: function ($item) {
-            $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
-        }
+$(document).ready(function() {
+
+    $('.menu-burger__header').click(function() {
+        $('.menu-burger__header').toggleClass('open-menu');
+        $('.navigation__menu').toggleClass('open-menu');
     });
 
-
-    $('#reload').bind('click', function () {
-        newOptions = eval("(" + $('#newoptions').val() + ")");
-        carousel.reload(newOptions);
-        return false;
+    $('.header__burger').click(function(event) {
+        $('.header__burger, .navigation__menu').toggleClass('active');
+        $('body').toggleClass('fixed-page');
     });
+});
 
-    $(function(){
-        $('.slick-vertical').slick({
-            vertical: true,
-            verticalSwiping: true,
-            slidesToShow: 2,
-            autoplay: true,
-            // prevArrow: '<img src="/img/ups.svg">',
-            // nextArrow: '<img src="/img/downs.svg">'
-        });
+/*Acardion */
+$('.accordion').accordion({
+    heightStyle: 'content',
+    header: '> .accordion-item > .accordion-header',
+    active: 0,
+});
+
+/* Slider-customer */
+
+$(function() {
+    $('.single-item').slick({
+        vertical: true,
+        verticalSwiping: true,
+        slidesToShow: 2,
+        autoplay: true,
+        prevArrow: '<img class="arrow-up" src="/img/up.svg">',
+        nextArrow: '<img class="arrow-down" src="/img/down.svg">'
     });
-
 });
