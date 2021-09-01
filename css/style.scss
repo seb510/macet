@@ -415,6 +415,13 @@ section {
     }
 }
 
+.team {
+    text-align: center;
+    &__text {
+        margin-bottom: 64px;
+    }
+}
+
 @media (max-width: 1024px) {
     .offer {
         padding: 228px 0 160px;
@@ -451,6 +458,21 @@ section {
     .progress {
         &__items {
             grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .customers {
+        &__wrapper {
+            grid-template-columns: minmax(300px, 856px);
+            row-gap: 20px;
+        }
+        &__content {
+            text-align: center;
+        }
+        &__text {
+            margin: 0 auto 45px;
+        }
+        &__slide {
+            justify-content: center;
         }
     }
 }
@@ -617,6 +639,46 @@ section {
     }
     .accordion .accordion-img img {
         margin: 0 auto;
+    }
+    .customers {
+        &__slide-info {
+            padding: 10px 15px;
+        }
+    }
+}
+
+@media (max-width: 542px) {
+    .customers {
+        &__text {
+            margin-bottom: 40px;
+        }
+        &__slide {
+            text-align: center;
+            grid-template-columns: minmax(64px, 355px);
+            column-gap: initial;
+        }
+        .slick-slide img {
+            margin: 0 auto;
+        }
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .slick-dots li:not(:last-child) {
+            margin-right: 15px;
+        }
+        .slick-dots li button {
+            width: 10px;
+            height: 10px;
+            background-color: ivory;
+            border-radius: 50%;
+            font-size: 0;
+        }
+        .slick-dots li.slick-active button {
+            background-color: #061e37;
+        }
     }
 }
 

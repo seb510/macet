@@ -27,6 +27,44 @@ $(function() {
         slidesToShow: 2,
         autoplay: true,
         prevArrow: '<img class="arrow-up" src="/img/up.svg">',
-        nextArrow: '<img class="arrow-down" src="/img/down.svg">'
+        nextArrow: '<img class="arrow-down" src="/img/down.svg">',
+        responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 542,
+                settings: {
+                    vertical: false,
+                    verticalSwiping: false,
+                    slidesToShow: 1,
+                    arrows: false,
+                    dots: true,
+
+
+                }
+            },
+
+        ]
     });
+});
+
+/* Team slider*/
+
+$('.slider-item').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    focusOnSelect: true,
+    asNavFor: '.slider-info'
+});
+
+$('.slider-info').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.slider-item',
+    dots: false,
 });
