@@ -1,13 +1,24 @@
 $(document).ready(function() {
 
+    /** To scorll header **/
+
+    $(window).bind('scroll', function() {
+        if ($(window).scrollTop() > 50) {
+            $('.header').addClass('sticky');
+        } else {
+            $('.header').removeClass('sticky');
+        }
+    });
+
     $('.menu-burger__header').click(function() {
         $('.menu-burger__header').toggleClass('open-menu');
         $('.navigation__menu').toggleClass('open-menu');
+        $('.body').toggleClass('fixed');
     });
 
     $('.header__burger').click(function(event) {
         $('.header__burger, .navigation__menu').toggleClass('active');
-        $('body').toggleClass('fixed-page');
+        $('.body').toggleClass('fixed');
     });
 });
 

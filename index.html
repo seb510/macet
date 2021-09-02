@@ -17,7 +17,7 @@
 </head>
 
 <body class="body">
-    <header class="header">
+    <header class="header sticky">
         <div class="container">
             <div class="navigation d-grid">
                 <a href="#" class="navigation__logo">
@@ -483,12 +483,12 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                 </p>
                 <form action="" class="contact__form d-grid">
-                    <input type="text" name="fname" class="contact__form-input" required placeholder="First Name">
-                    <input type="text" name="lname" class="contact__form-input" required placeholder="Last Name">
-                    <input type="email" name="email" class="contact__form-input" required placeholder="Email">
-                    <input type="tel" id="phone" name="phone" class="contact__form-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Phone">
-                    <textarea name="message" class="contact__form-input" placeholder="Message" required></textarea>
-                    <label for="checkbox">
+                    <input type="text" name="fname" class="first-name contact__form-input" required placeholder="First Name">
+                    <input type="text" name="lname" class="last-name contact__form-input" required placeholder="Last Name">
+                    <input type="email" name="email" class="email contact__form-input" required placeholder="Email">
+                    <input type="tel" id="phone" name="phone" class="phone contact__form-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Phone">
+                    <textarea name="message" class="message contact__form-input" placeholder="Message" required></textarea>
+                    <label for="checkbox" class="checkbox">
                         <input type="checkbox">
                         subscribe to the newsletter
                     </label>
@@ -497,8 +497,58 @@
                 </form>
             </div>
         </section>
-
-
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__items d-flex">
+                        <a href="#" class="footer__logo">
+                            <img src="img/logo.png" alt="Dart Service">
+                        </a>
+                        <ul class="footer__menu d-flex">
+                            <li class="footer__item">
+                                <a href="#home">home</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#home">service</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#home">extension</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#home">pricing</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#home">help</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__items d-flex">
+                        <ul class="footer__policy d-flex">
+                            <li><a href="#">Privey Policy</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">terms of use</a></li>
+                        </ul>
+                        <div class="footer__social-links social-links">
+                            <a href="#" target="_blank" class="twiter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" target="_blank" class="facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" target="_blank" class="youtube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" target="_blank" class="instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" target="_blank" class="linkidin">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script src="js/jquery-3.6.0.min.js"></script>

@@ -5,8 +5,20 @@
   line-height: 25px;
 }
 
+.fixed {
+  overflow: hidden;
+}
+
 section {
   padding: 90px 0;
+}
+
+a,
+button,
+i,
+.navigation {
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
 }
 
 .container {
@@ -69,8 +81,6 @@ section {
   background-color: #fff;
   -webkit-box-shadow: 0px 3px 8px 0px rgba(34, 60, 80, 0.22);
   box-shadow: 0px 3px 8px 0px rgba(34, 60, 80, 0.22);
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
 }
 
 .btn:hover,
@@ -98,11 +108,6 @@ section {
   font-size: 20px;
   color: #90a4ae;
   width: 176px;
-}
-
-.social-links i {
-  -webkit-transition: .4s ease-in-out;
-  transition: .4s ease-in-out;
 }
 
 .contact__form-input {
@@ -148,6 +153,7 @@ section {
   background-color: transparent;
   -webkit-transition: .4s ease-in-out;
   transition: .4s ease-in-out;
+  z-index: 15;
 }
 
 .header .navigation {
@@ -164,8 +170,6 @@ section {
   color: #fff;
   text-transform: capitalize;
   font-weight: 600;
-  -webkit-transition: .4s ease-in-out;
-  transition: .4s ease-in-out;
 }
 
 .header .navigation__item:hover {
@@ -184,6 +188,31 @@ section {
 .header .navigation__sing-up:hover {
   border-color: #061e37;
   color: #061e37;
+}
+
+.header.sticky {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.header.sticky .navigation {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header.sticky .navigation__item {
+  color: #061e37;
+}
+
+.header.sticky .navigation__sing-up {
+  color: #061e37;
+  border-color: #061e37;
+}
+
+.header.sticky .navigation__logo {
+  -webkit-filter: brightness(0.9) invert(0.9) sepia(0.5) hue-rotate(100deg) saturate(200%);
+          filter: brightness(0.9) invert(0.9) sepia(0.5) hue-rotate(100deg) saturate(200%);
 }
 
 .offer {
@@ -511,8 +540,6 @@ section {
   padding: 27px 24px;
   -webkit-box-shadow: 0px 3px 8px 0px rgba(34, 60, 80, 0.22);
   box-shadow: 0px 3px 8px 0px rgba(34, 60, 80, 0.22);
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
 }
 
 .customers__slide-img {
@@ -654,6 +681,10 @@ section {
   color: #061e37;
 }
 
+.contact {
+  background-color: #fafafa;
+}
+
 .contact__title, .contact__text {
   text-align: center;
   color: #061e37;
@@ -666,9 +697,113 @@ section {
   width: 100%;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-column-gap: 34px;
           column-gap: 34px;
   row-gap: 20px;
+      grid-template-areas: "fname lname" "email phone" "message message" "checkbox submit";
+}
+
+.contact .first-name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: fname;
+}
+
+.contact .last-name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: lname;
+}
+
+.contact .email {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: email;
+}
+
+.contact .message {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: message;
+  height: 140px;
+}
+
+.contact .checkbox {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: checkbox;
+  font-weight: 600;
+}
+
+.contact .phone {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: phone;
+}
+
+.contact .contact__form-btn {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: submit;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.footer {
+  padding: 90px 0;
+  background-color: #061e37;
+}
+
+.footer__items:first-child {
+  margin-bottom: 40px;
+}
+
+.footer__item {
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.footer__item a:hover {
+  color: #78909c;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.footer__policy li {
+  text-transform: capitalize;
+  color: #78909c;
+  position: relative;
+}
+
+.footer__policy li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer__policy li:not(:last-child)::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  background-color: #fff;
+}
+
+.footer__policy li a:hover {
+  color: #fff;
+}
+
+.footer__social-links i:hover {
+  color: #fff;
 }
 
 @media (max-width: 1024px) {
@@ -913,6 +1048,51 @@ section {
   }
 }
 
+@media (max-width: 612px) {
+  .footer {
+    padding: 60px 0;
+  }
+  .footer__logo {
+    margin-bottom: 15px;
+  }
+  .footer__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__menu {
+    margin-bottom: 15px;
+  }
+  .footer__items:first-child {
+    margin-bottom: 0;
+  }
+  .footer__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+  .footer__item a:hover {
+    color: #78909c;
+  }
+  .footer__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .footer__policy {
+    margin-bottom: 15px;
+  }
+  .footer__policy li:not(:last-child) {
+    margin-right: 17px;
+  }
+  .footer__policy li:not(:last-child)::before {
+    right: -10px;
+  }
+}
+
 @media (max-width: 542px) {
   .customers__text {
     margin-bottom: 40px;
@@ -960,6 +1140,28 @@ section {
   }
   .team__info-text {
     margin-bottom: 18px;
+  }
+  .contact__form-input {
+    padding: 10px;
+  }
+  .contact__title, .contact__text {
+    margin-bottom: 15px;
+  }
+  .contact__form {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+    row-gap: 20px;
+        grid-template-areas: "fname" "lname" "email" "phone" "message" "checkbox" "submit";
+  }
+  .contact .message {
+    height: 110px;
+  }
+  .contact .contact__form-btn {
+    width: 100%;
+    -ms-grid-column-align: start;
+        justify-self: start;
   }
 }
 
@@ -1010,6 +1212,9 @@ section {
         -ms-flex-pack: start;
             justify-content: flex-start;
     padding-left: 20px;
+  }
+  .easy__text {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
