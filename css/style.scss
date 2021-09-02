@@ -79,6 +79,34 @@ section {
     margin-right: 28px;
 }
 
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 15px;
+    font-size: 20px;
+    color: #90a4ae;
+    width: 176px;
+    & i {
+        transition: .4s ease-in-out;
+    }
+}
+
+.contact__form-input {
+    display: inline-block;
+    border-radius: 7px;
+    border: solid 1px #061e37;
+    padding: 15px 18px;
+    color: #061e37;
+    font-weight: 600;
+    font-size: 14px;
+    resize: none;
+    &::placeholder {
+        font-weight: 600;
+        color: #061e37;
+        font-size: 15px;
+    }
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -417,8 +445,79 @@ section {
 
 .team {
     text-align: center;
+    &__wrapper {
+        max-width: 654px;
+        width: 100%;
+        margin: 0 auto;
+    }
     &__text {
         margin-bottom: 64px;
+    }
+    &__slider-items {
+        margin-bottom: 30px;
+    }
+    &__slider-img {
+        width: 160px;
+        height: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        overflow: hidden;
+        opacity: 0.3;
+        margin: 0 auto 10px;
+        cursor: pointer;
+        & img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+    }
+    &__slider-item.slick-slide.slick-current.slick-active &__slider-img {
+        opacity: 1;
+        border: solid 15px #fff;
+        -webkit-box-shadow: 0px 3px 8px -1px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 0px 3px 8px -1px rgba(34, 60, 80, 0.2);
+        box-shadow: 0px 3px 8px -1px rgba(34, 60, 80, 0.2);
+    }
+    &__slider-item.slick-slide.slick-current.slick-active &__slider-img img {
+        width: 160px;
+        height: 160px;
+    }
+    &__info {
+        text-align: center;
+        &-title {
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        &-text {
+            color: #90a4ae;
+            margin-bottom: 28px;
+        }
+        &-links {
+            margin: 0 auto;
+            & i:hover {
+                color: #061e37;
+            }
+        }
+    }
+}
+
+.contact {
+    &__title,
+    &__text {
+        text-align: center;
+        color: #061e37;
+        margin-bottom: 30px;
+    }
+    &__form {
+        max-width: 600px;
+        margin: 0 auto;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 34px;
+        row-gap: 20px;
     }
 }
 
@@ -678,6 +777,19 @@ section {
         }
         .slick-dots li.slick-active button {
             background-color: #061e37;
+        }
+    }
+    .team {
+        &__text {
+            margin-bottom: 36px;
+        }
+        &__slider-items {
+            margin-bottom: 15px;
+        }
+        &__info {
+            &-text {
+                margin-bottom: 18px;
+            }
         }
     }
 }

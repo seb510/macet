@@ -53,18 +53,40 @@ $(function() {
 
 /* Team slider*/
 
-$('.slider-item').slick({
-    slidesToShow: 3,
+$('.slider-info').slick({
+    slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     fade: true,
     focusOnSelect: true,
-    asNavFor: '.slider-info'
+    asNavFor: '.slider-items'
 });
 
-$('.slider-info').slick({
-    slidesToShow: 1,
+$('.slider-items').slick({
+    slidesToShow: 3,
     slidesToScroll: 1,
-    asNavFor: '.slider-item',
+    asNavFor: '.slider-info',
+    centerMode: true,
+    centerPadding: '40px',
+    focusOnSelect: true,
     dots: false,
+    arrows: false,
+    responsive: [{
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: false,
+                slidesToShow: 1
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        }
+    ]
 });
