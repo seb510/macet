@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
     <title>Dart Service Manager</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -488,10 +489,12 @@
                     <input type="email" name="email" class="email contact__form-input" required placeholder="Email">
                     <input type="tel" id="phone" name="phone" class="phone contact__form-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Phone">
                     <textarea name="message" class="message contact__form-input" placeholder="Message" required></textarea>
-                    <label for="checkbox" class="checkbox">
-                        <input type="checkbox">
-                        subscribe to the newsletter
-                    </label>
+                    <div class="chekcbox">
+                        <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+                        <label for="happy" class="custom-checkbox-label">
+                            subscribe to the newsletter
+                        </label>
+                    </div>
                     <input type="submit" class="contact__form-btn btn-send" value="send">
 
                 </form>

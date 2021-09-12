@@ -37,8 +37,8 @@ $(function() {
         verticalSwiping: true,
         slidesToShow: 2,
         autoplay: true,
-        prevArrow: '<img class="arrow-up" src="/img/up.svg">',
-        nextArrow: '<img class="arrow-down" src="/img/down.svg">',
+        prevArrow: '<img class="arrow-up" src="img/up.svg">',
+        nextArrow: '<img class="arrow-down" src="img/down.svg">',
         responsive: [{
                 breakpoint: 768,
                 settings: {
@@ -67,6 +67,7 @@ $(function() {
 $('.slider-info').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
+    cssEase: 'linear',
     arrows: false,
     fade: true,
     focusOnSelect: true,
@@ -76,6 +77,7 @@ $('.slider-info').slick({
 $('.slider-items').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
+    cssEase: 'linear',
     asNavFor: '.slider-info',
     centerMode: true,
     centerPadding: '40px',
