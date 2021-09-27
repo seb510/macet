@@ -21,7 +21,7 @@
     <header class="header sticky">
         <div class="container">
             <div class="navigation d-grid">
-                <a href="#" class="navigation__logo">
+                <a href="#home" class="navigation__logo">
                     <img src="img/logo.png" alt="Dart Service">
                 </a>
                 <div class="navigation__menu d-flex">
@@ -30,27 +30,38 @@
                             <a href="#home">home</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="#home">service</a>
+                            <a href="#management">Management</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="#home">extension</a>
+                            <a href="#services">services</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="#home">pricing</a>
+                            <a href="#rewiews">Rewiews</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="#home">help</a>
+                            <a href="#help">help</a>
                         </li>
                     </ul>
-                    <a href="#" class="navigation__sing-up">sign up</a>
+                    <a id="sing-up" class="navigation__sing-up">sign up</a>
                 </div>
-                <div class="menu-burger__header">
+                <div class="sing-form" id="sing-form">
+                    <h2>Singn up on our news</h2>
+                    <p>
+                        Please Enter your email to be the first to receive information
+                    </p>
+                    <input type="email" name="email" class="email sing-form__input" required placeholder="Email">
+                    <input type="submit" class="sing-form__btn btn-send" value="send">
+                </div>
+                <div id="burger-top-menu" class="menu-burger__header">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                     <span></span>
                 </div>
             </div>
         </div>
     </header>
-    <div class="offer">
+    <div id="home" class="offer">
         <div class="container">
             <div class="offer__wrapper d-grid">
                 <div class="offer__content">
@@ -66,8 +77,8 @@
                     </div>
                 </div>
                 <div class="offer__video">
-                    <a data-fancybox href="https://www.youtube.com/watch?v=XCX0bhVjTqA">
-                        <img src="https://img.youtube.com/vi/XCX0bhVjTqA/maxresdefault.jpg" alt="Previw">
+                    <a data-fancybox href="https://youtu.be/8WRV2qWyYWc">
+                        <img src="https://img.youtube.com/vi/8WRV2qWyYWc/maxresdefault.jpg" alt="Previw">
                         <div class="offer__video-btn">
                             <img src="img/play.png" alt="play">
                             <p class="offer__video-text">watch the video</p>
@@ -78,7 +89,7 @@
         </div>
     </div>
     <div class="main">
-        <section class="easy">
+        <section id="management" class="easy">
             <div class="container">
                 <h2 class="easy__title section-title">
                     Easy & Useful
@@ -175,7 +186,7 @@
                 </li>
             </ul>
         </section>
-        <section class="services">
+        <section id="services" class="services">
             <div class="container">
                 <h2 class="services__title section-title">
                     services
@@ -258,7 +269,7 @@
                 </div>
             </div>
         </section>
-        <section class="customers">
+        <section id="rewiews" class="customers">
             <div class="container">
                 <div class="customers__wrapper d-grid">
                     <div class="customers__content">
@@ -475,7 +486,7 @@
 
 
         </section>
-        <section class="contact">
+        <section id="help" class="contact">
             <div class="container">
                 <h2 class="contact__title section-title">
                     contact us

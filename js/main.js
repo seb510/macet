@@ -29,6 +29,26 @@ $('.accordion').accordion({
     active: 0,
 });
 
+/* sign-up window */
+$(document).on('click', '#sing-up', () => {
+    $.fancybox.open({
+        src: '#sing-form',
+        type: 'inline'
+    });
+})
+
+/* Anhor smooth scroll link */
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 /* Slider-customer */
 
 $(function() {

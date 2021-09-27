@@ -112,7 +112,7 @@ input,
   width: 176px;
 }
 
-.contact__form-input {
+input {
   display: inline-block;
   border-radius: 7px;
   border: solid 1px #061e37;
@@ -123,25 +123,25 @@ input,
   resize: none;
 }
 
-.contact__form-input::-webkit-input-placeholder {
+input::-webkit-input-placeholder {
   font-weight: 600;
   color: #061e37;
   font-size: 15px;
 }
 
-.contact__form-input:-ms-input-placeholder {
+input:-ms-input-placeholder {
   font-weight: 600;
   color: #061e37;
   font-size: 15px;
 }
 
-.contact__form-input::-ms-input-placeholder {
+input::-ms-input-placeholder {
   font-weight: 600;
   color: #061e37;
   font-size: 15px;
 }
 
-.contact__form-input::placeholder {
+input::placeholder {
   font-weight: 600;
   color: #061e37;
   font-size: 15px;
@@ -211,6 +211,31 @@ input,
 
 .custom-checkbox:disabled + label::before {
   background-color: #e9ecef;
+}
+
+.sing-form {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #1ae7c0;
+  padding: 20px;
+  display: none;
+}
+
+.sing-form h2,
+.sing-form p {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.sing-form .sing-form__input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.sing-form .sing-form__btn {
+  border: none;
+  padding: 15px 0;
 }
 
 .header {
@@ -997,6 +1022,7 @@ input,
   .header .navigation {
     -ms-grid-columns: 2fr 1fr;
         grid-template-columns: 2fr 1fr;
+    /** burger */
   }
   .header .navigation__menu {
     -webkit-box-orient: vertical;
@@ -1052,51 +1078,58 @@ input,
     color: #1ae7c0;
   }
   .header .navigation .menu-burger__header {
-    justify-self: flex-end;
+    width: 29px;
+    height: 23px;
     position: relative;
-    width: 35px;
-    height: 35px;
-    display: block;
+    justify-self: flex-end;
     margin-left: 10px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
     z-index: 21;
   }
-  .header .navigation .menu-burger__header span, .header .navigation .menu-burger__header:after, .header .navigation .menu-burger__header::before {
-    height: 3px;
-    width: 100%;
-    position: absolute;
-    background: #061e37;
-    margin: 0 auto;
-  }
   .header .navigation .menu-burger__header span {
-    top: 17px;
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #061e37;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
   }
-  .header .navigation .menu-burger__header::after, .header .navigation .menu-burger__header::before {
-    content: "";
+  .header .navigation .menu-burger__header span:nth-child(1) {
+    top: 0;
   }
-  .header .navigation .menu-burger__header::after {
-    bottom: 5px;
+  .header .navigation .menu-burger__header span:nth-child(2),
+  .header .navigation .menu-burger__header span:nth-child(3) {
+    top: 10px;
   }
-  .header .navigation .menu-burger__header:before {
-    top: 5px;
+  .header .navigation .menu-burger__header span:nth-child(4) {
+    top: 20px;
   }
-  .header .navigation .menu-burger__header.open-menu span {
-    opacity: 0;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+  .header .navigation .menu-burger__header.open-menu span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
   }
-  .header .navigation .menu-burger__header.open-menu::before {
-    -webkit-transform: rotate(38deg);
-            transform: rotate(38deg);
-    top: 16px;
-    -webkit-transition: .4s;
-    transition: .4s;
+  .header .navigation .menu-burger__header.open-menu span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
   }
-  .header .navigation .menu-burger__header.open-menu::after {
-    -webkit-transform: rotate(-38deg);
-            transform: rotate(-38deg);
-    top: 16px;
-    -webkit-transition: .4s;
-    transition: .4s;
+  .header .navigation .menu-burger__header.open-menu span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  .header .navigation .menu-burger__header.open-menu span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
   }
   .offer {
     padding: 140px 0 100px;
