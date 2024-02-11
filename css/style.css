@@ -775,13 +775,14 @@ input::placeholder {
   overflow: hidden;
   opacity: 0.3;
   margin: 0 auto 10px;
+  transform: scale(.8);
   cursor: pointer;
 }
 
 .team__slider-img img {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .team__slider-item.slick-slide.slick-current.slick-active .team__slider-img {
@@ -789,11 +790,7 @@ input::placeholder {
   border: solid 15px #fff;
   -webkit-box-shadow: 0px 3px 8px -1px rgba(34, 60, 80, 0.2);
   box-shadow: 0px 3px 8px -1px rgba(34, 60, 80, 0.2);
-}
-
-.team__slider-item.slick-slide.slick-current.slick-active .team__slider-img img {
-  width: 160px;
-  height: 160px;
+  transform: scale(1);
 }
 
 .team__info {
