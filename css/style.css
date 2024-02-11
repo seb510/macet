@@ -1011,6 +1011,7 @@ input::placeholder {
   }
   .header .navigation {
     -ms-grid-columns: 2fr 1fr;
+    padding: 20px 0;
         grid-template-columns: 2fr 1fr;
     /** burger */
   }
